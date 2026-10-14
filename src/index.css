@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+
+@layer components {
+    .wrapper {
+        @apply min-h-screen bg-cover bg-center bg-no-repeat bg-[url("/src/assets/moviesbg.jpg")] py-5 px-3
+    }
+    .text {
+        @apply font-bold text-3xl w-3/5 text-center
+    }
+    .movie-card {
+        @apply bg-gray-200 rounded-xl overflow-hidden  p-5 w-full mb-10
+    } 
+    .img {
+        @apply rounded-3xl w-full aspect-[2/3]  object-cover
+    }
+    .gradient {
+        @apply bg-gradient-to-r from-blue-600 via-purple-700 to-pink-500 bg-clip-text text-transparent
+    }
+}
